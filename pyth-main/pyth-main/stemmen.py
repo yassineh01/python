@@ -1,9 +1,9 @@
 
 stemmen_jef = 0
-stemmen_martino = 0
+stemmen_yassine = 0
 
 print("Welkom bij de verkiezingen van Florijnia!")
-print("Je kunt stemmen op jef of martino.")
+print("Je kunt stemmen op jef of yassine.")
 print("Type 'UITSLAG' om de stemmen te stoppen en de winnaar te zien.\n")
 
 stem = input("Op wie wil je stemmen? ")
@@ -12,7 +12,7 @@ while stem != 'UITSLAG':
 
     if stem.lower() == 'jef':
         stemmen_jef += 1
-    elif stem.lower() == 'martino':
+    elif stem.lower() == 'yassine':
         stemmen_martino += 1
     else:
         print("Ongeldige keuze. Probeer opnieuw.")
@@ -20,7 +20,7 @@ while stem != 'UITSLAG':
     stem = input("Op wie wil je stemmen? ")
 
 # Bepalen van de winnaar op basis van het aantal stemmen
-if stemmen_omer > martino:
+if stemmen_omer > yassine:
     print("Omer heeft gewonnen!")
 elif stemmen_martino > stemmen_jef:
     print("martino heeft gewonnen!")
